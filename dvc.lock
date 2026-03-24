@@ -120,3 +120,7 @@ stages:
       hash: md5
       md5: 9563fb1d7154b7905a15a59210949e59
       size: 19767
+    - path: metrics/scores.json
+      hash: md5
+      md5: 69896fa1acccdca9c00454de97b21388
+      size: 85
