@@ -49,6 +49,7 @@ def main():
     )
     result_file = os.path.join(PROCESSED_DATA_PATH, 'silica_predictions.csv')
     results_df.to_csv(result_file, index=False)
+    print(f"Predictions saved Successfully to {result_file} !")
 
     # Save score to metrics folder
     scores = {

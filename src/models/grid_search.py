@@ -42,7 +42,7 @@ def main():
     # Save the best parameters to a .pkl file
     os.makedirs(MODELS_PATH, exist_ok=True)
     joblib.dump(best_params, os.path.join(MODELS_PATH, 'best_params.pkl'))
-    print(f"Best parameters saved to {os.path.join(MODELS_PATH, 'best_params.pkl')}")
+    print(f"Best parameters saved to {os.path.join(MODELS_PATH, 'best_params.pkl')}....")
     print(f"Best parameters: {best_params}")
 
 if __name__ == "__main__":

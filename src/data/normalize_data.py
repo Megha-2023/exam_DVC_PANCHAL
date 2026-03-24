@@ -2,18 +2,20 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import os
 
-
 PROCESSED_DATA_PATH = 'data/processed_data'
+
 
 def load_data(file_path):
     """Load CSV data from the processed data directory."""
     return pd.read_csv(file_path)
+
 
 def save_data(df, filename):
     """Save DataFrame to the processed data directory."""
     output_path = os.path.join(PROCESSED_DATA_PATH, filename)
     df.to_csv(output_path, index=False)
     print(f"Data saved to {output_path}")
+
 
 def normalize_features(X_train, X_test):
     """Normalize the features using StandardScaler."""

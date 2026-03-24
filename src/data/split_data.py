@@ -7,8 +7,7 @@ DATA_PATH = 'data/raw_data/raw.csv'
 OUTPUT_PATH = 'data/processed_data'
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
-print(DATA_PATH)
-
+# print(DATA_PATH)
 
 def check_existing_file(file_path):
     """Check if a file already exists. If it does, ask if we want to overwrite it"""
@@ -23,6 +22,7 @@ def check_existing_file(file_path):
                 print("Invalid response. Please enter 'y' or 'n'.")
     else:
         return True
+    
 
 def main():
     """Read data, Split and save to processed folder"""
@@ -32,6 +32,7 @@ def main():
     target = df['silica_concentrate']
     features = df.drop(['silica_concentrate'], axis=1)
     # Split data
+    print("Splitting Data.....")
     X_train, X_test, y_train, y_test = train_test_split(
         features,
         target,
@@ -48,6 +49,7 @@ def main():
         if check_existing_file(output_file):
             file.to_csv(output_file, index=False)
     
+    print("Splited Data saved Successfully !")
 
 if __name__ == "__main__":
     main()
