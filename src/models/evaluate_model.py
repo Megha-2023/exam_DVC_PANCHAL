@@ -4,10 +4,10 @@ import json
 import os
 from sklearn.metrics import mean_squared_error, r2_score
 
-PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-PROCESSED_DATA_PATH = os.path.join(PROJECT_PATH, 'data/processed_data')
-MODELS_PATH = os.path.join(PROJECT_PATH, 'models')
-METRICS_PATH = os.path.join(PROJECT_PATH, 'metrics')
+
+PROCESSED_DATA_PATH = 'data/processed_data'
+MODELS_PATH = 'models'
+METRICS_PATH = 'metrics'
 
 
 def load_data(file_path):

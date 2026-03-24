@@ -4,9 +4,9 @@ import joblib
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import GridSearchCV
 
-PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-PROCESSED_DATA_PATH = os.path.join(PROJECT_PATH, 'data/processed_data')
-MODELS_PATH = os.path.join(PROJECT_PATH, 'models')
+
+PROCESSED_DATA_PATH = 'data/processed_data'
+MODELS_PATH = 'models'
 
 def load_data(file_path):
     """Load CSV data from the processed data directory."""

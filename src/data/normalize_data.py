@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import os
 
-PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-PROCESSED_DATA_PATH = os.path.join(PROJECT_PATH, 'data/processed_data')
+
+PROCESSED_DATA_PATH = 'data/processed_data'
 
 def load_data(file_path):
     """Load CSV data from the processed data directory."""

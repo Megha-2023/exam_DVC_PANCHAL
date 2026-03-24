@@ -2,11 +2,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import os
 
-PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-DATA_PATH = os.path.join(PROJECT_PATH, 'data/raw_data/raw.csv')
-OUTPUT_PATH = os.path.join(PROJECT_PATH, 'data/processed_data')
 
-print(PROJECT_PATH)
+DATA_PATH = 'data/raw_data/raw.csv'
+OUTPUT_PATH = 'data/processed_data'
+os.makedirs(OUTPUT_PATH, exist_ok=True)
+
 print(DATA_PATH)
 
 
